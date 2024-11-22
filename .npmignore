@@ -1,0 +1,39 @@
+# source
+src
+test
+e2e
+coverage
+.github
+docs
+
+# config
+.eslintrc.js
+.prettierrc
+nest-cli.json
+nodemon.json
+nodemon-debug.json
+tsconfig.json
+tsconfig.build.json
+tslint.json
+.eslintignore
+.eslintrc
+.prettierrc
+.gitignore
+
+# misc
+.git
+.env
+.env.*
+.npmrc
+.editorconfig
+.dockerignore
+Dockerfile
+docker-compose.yml
+README.md
+
+# tests
+test
+coverage
+*.spec.ts
+*.test.ts
+jest.config.js
