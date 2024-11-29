@@ -1,6 +1,6 @@
 {
   "name": "@nest-otel/k8s",
-  "version": "1.0.2-beta.0",
+  "version": "1.0.2-beta.1",
   "description": "OpenTelemetry integration for NestJS with Kubernetes support",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
