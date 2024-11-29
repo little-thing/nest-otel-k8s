@@ -14,7 +14,6 @@ jobs:
         with:
           node-version: '18.x'
           registry-url: 'https://registry.npmjs.org/'
-          always-auth: true
           
       - uses: pnpm/action-setup@v2
         with:
@@ -22,6 +21,12 @@ jobs:
           
       - name: Install dependencies
         run: pnpm install
+        
+      - name: Run tests
+        run: pnpm test
+        
+      - name: Build
+        run: pnpm build
         
       - name: Create .npmrc
         run: |
@@ -31,4 +36,3 @@ jobs:
         run: pnpm publish --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

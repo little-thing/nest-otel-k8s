@@ -4,6 +4,14 @@
   "description": "OpenTelemetry integration for NestJS with Kubernetes support",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/little-thing/nest-otel-k8s.git"
+  },
+  "bugs": {
+    "url": "https://github.com/little-thing/nest-otel-k8s/issues"
+  },
+  "homepage": "https://github.com/little-thing/nest-otel-k8s#readme",
   "files": [
     "dist",
     "README.md",
@@ -41,7 +49,10 @@
     "nodejs",
     "typescript"
   ],
-  "author": "",
+  "author": {
+    "name": "little-thing",
+    "url": "https://github.com/little-thing"
+  },
   "license": "MIT",
   "peerDependencies": {
     "@nestjs/common": "^10.0.0 || ^9.0.0",
