@@ -44,7 +44,7 @@ yarn add @nest-otel/k8s
 1. 在你的 NestJS 应用的 `app.module.ts` 中导入 OpenTelemetryModule：
 
 ```typescript
-import { OpenTelemetryModule } from 'nestjs-opentelemetry';
+import { OpenTelemetryModule } from '@nest-otel/k8s';
 
 @Module({
   imports: [
@@ -59,7 +59,7 @@ export class AppModule {}
 2. 使用异步配置（可选）：
 
 ```typescript
-import { OpenTelemetryModule } from 'nestjs-opentelemetry';
+import { OpenTelemetryModule } from '@nest-otel/k8s';
 
 @Module({
   imports: [
@@ -82,7 +82,7 @@ export class AppModule {}
 你可以使用 `@Trace` 装饰器来手动标记需要追踪的方法：
 
 ```typescript
-import { Trace } from 'nestjs-opentelemetry';
+import { Trace } from '@nest-otel/k8s';
 
 @Injectable()
 export class UserService {
@@ -98,7 +98,7 @@ export class UserService {
 用于普通类方法的追踪：
 
 ```typescript
-import { TracePlain } from 'nestjs-opentelemetry';
+import { TracePlain } from '@nest-otel/k8s';
 
 @TracePlain()
 class MyClass {

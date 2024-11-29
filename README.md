@@ -44,7 +44,7 @@ yarn add @nest-otel/k8s
 1. Import OpenTelemetryModule in your NestJS application's `app.module.ts`:
 
 ```typescript
-import { OpenTelemetryModule } from 'nestjs-opentelemetry';
+import { OpenTelemetryModule } from '@nest-otel/k8s';
 
 @Module({
   imports: [
@@ -59,7 +59,7 @@ export class AppModule {}
 2. Using async configuration (optional):
 
 ```typescript
-import { OpenTelemetryModule } from 'nestjs-opentelemetry';
+import { OpenTelemetryModule } from '@nest-otel/k8s';
 
 @Module({
   imports: [
@@ -82,7 +82,7 @@ export class AppModule {}
 You can use the `@Trace` decorator to manually mark methods for tracing:
 
 ```typescript
-import { Trace } from 'nestjs-opentelemetry';
+import { Trace } from '@nest-otel/k8s';
 
 @Injectable()
 export class UserService {
@@ -98,7 +98,7 @@ export class UserService {
 For tracing plain class methods:
 
 ```typescript
-import { TracePlain } from 'nestjs-opentelemetry';
+import { TracePlain } from '@nest-otel/k8s';
 
 @TracePlain()
 class MyClass {
