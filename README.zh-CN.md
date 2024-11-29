@@ -32,11 +32,11 @@
 ## 安装
 
 ```bash
-npm install nestjs-opentelemetry
+npm install @nest-otel/k8s
 # 或
-pnpm add nestjs-opentelemetry
+pnpm add @nest-otel/k8s
 # 或
-yarn add nestjs-opentelemetry
+yarn add @nest-otel/k8s
 ```
 
 ## 快速开始

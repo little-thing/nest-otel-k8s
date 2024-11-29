@@ -32,11 +32,11 @@ This is an OpenTelemetry auto-injection module for NestJS framework that automat
 ## Installation
 
 ```bash
-npm install nestjs-opentelemetry
+npm install @nest-otel/k8s
 # or
-pnpm add nestjs-opentelemetry
+pnpm add @nest-otel/k8s
 # or
-yarn add nestjs-opentelemetry
+yarn add @nest-otel/k8s
 ```
 
 ## Quick Start
